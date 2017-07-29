@@ -14,6 +14,7 @@ while(respuesta == true)
 {
 	num = prompt("Ingrese un número positivo");
 	num = parseInt(num);
+	contador++;
 
 	while(num<0)
 	{
@@ -41,7 +42,7 @@ while(respuesta == true)
 
 
 	suma = suma + num;
-	contador++;
+
 
 	respuesta = confirm("Desea seguir ingresando números?");
 
