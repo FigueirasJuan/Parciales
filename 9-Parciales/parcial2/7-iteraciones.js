@@ -7,46 +7,51 @@ function Mostrar()
 	var promedio;
 	var contvar = 0;
 	var suma = 0;
+	var max;
+	var min;
 
 while(contador<6)
 {
 	nota = prompt("Ingrese la nota: ");
-	sexo = prompt("Ingrese el sexo: ");
 	nota = parseInt(nota);
-	contador++;
 
 	while(nota>10 || nota<0)
 	{
 		nota = prompt("Ingrese una nota valida entre 0 y 10:");
 		nota = parseInt(nota);
-		contador--;
-
 	}
+
+	sexo = prompt("Ingrese el sexo: ");
+
 	while(!(sexo == "f" || sexo == "m"))
 	{
 		sexo = prompt("Ingrese un sexo valido: ");
-		contador--;
+		
 	}
-
+	
 	if(contador==1)
 	{
 		max = nota;
 		min = nota;
 	}
+
 	else if(nota>min)
 	{
 		max = nota;
 	}
+
 	else
 	{
 		min = nota;
 	}
+
 	if(nota>=6 && sexo == "m")
 	{
 		contvar++;
 	}
 
 	suma = suma + nota;
+	contador++;
 	
 }
 
