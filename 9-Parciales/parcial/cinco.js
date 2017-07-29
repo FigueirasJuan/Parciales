@@ -1,7 +1,7 @@
 function Mostrar()
 {
     var dia = prompt("Ingrese su día");
-    var dia = dia.toLowerCase()
+    dia = dia.toLowerCase();
     switch(dia)
     {
         case "sabado" || "domingo":
